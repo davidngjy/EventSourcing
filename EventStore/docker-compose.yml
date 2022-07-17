@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  eventstore.webapi:
+    image: ${DOCKER_REGISTRY-}eventstorewebapi
+    build:
+      context: .
+      dockerfile: EventStore.WebApi/Dockerfile
